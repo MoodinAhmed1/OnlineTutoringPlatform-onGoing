@@ -17,12 +17,11 @@ body , html {
 }
 .left-section {
 	display: flex;
-	flex: 1;
-	max-width: fit-content;
-	margin: 0 auto;
+	flex-grow: 2;
 }
 .right-section {
 	display: flex;
+	flex-grow: 1;
 	justify-content: flex-end;
 	padding-right: 20px;
 	column-gap: 5px;
@@ -31,8 +30,10 @@ body , html {
 
 .logo-div {
 	max-height: 100%;
-	width: auto;
 	margin-top: 5px;
+	font-weight: 200;
+	margin-left: auto;
+	z-index: 2;
 }
 .logo {
 	display: flex;
@@ -57,6 +58,7 @@ body , html {
 #header .left-section nav {
 	display: flex;
 	align-items: center;
+	margin: 0 auto;
 }
 #header .left-section nav ul {
 	display: flex;
@@ -68,8 +70,9 @@ body , html {
 }
 #header .left-section nav li {
 	font-weight: 500;
-	margin: 0 15px;
+	margin: 0 10px;
 	color: white;
+	font-size: 12px;
 }
 #header .left-section nav li:hover {
 	transform: scale(1.1);
@@ -85,6 +88,8 @@ body , html {
 	padding: 5px 10px;
 	column-gap: 10px;
 	background-color: white;
+
+	margin-left: 10px;
 }
 #header .search-input {
 	border: none;
@@ -122,13 +127,86 @@ body , html {
 	transition: 0.3s;
 }
 
+#home {
+	position: relative;
+	height: 550px;
+	width: 100%;
+	background-image: url("/Assets/Images/write-like.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#home::before { 
+	content: "";
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+	background-color: rgba(0, 0, 0, 0.8); /* Adjust the color and opacity as needed */ 
+	z-index: 1; 
+}
+#home .container { 
+	position: relative;
+	z-index: 2;
+	max-width: 1000px;
+	height: 100%; 
+	margin: 0 auto 50px; 
+	padding: 20px; 
+	color: white;
 
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	
+}
 
+#home .intro {
+	font-size: 36px;
+	font-weight: 800;
+}
+#home .intro span {
+	font-size: 26px;
+	font-weight: 200;
+}
 
+#home .ask-a-question {
+	width: 60%;
+	display: flex;
+	column-gap: 10px;
+	padding: 8px;
+	background-color: #00000087;
+	border-radius: 40px;
+	border: 2px solid rgb(0, 0, 0);
+}
+#home .search-bar {
+	display: flex;
+	width: 100%;
 
-
-
-
+	border: 1px solid rgb(213, 213, 213);
+	border-radius: 25px;
+	padding: 5px 10px;
+	column-gap: 10px;
+	background-color: white;
+}
+#home .search-input {
+	border: none;
+	width: 100%;
+	font-style: italic;
+}
+#home .search-icon {
+	width: 30px;
+	height: 30px;
+}
+#home .get-help-button {
+	padding: 10px;
+	background-color: #FFF100;
+	text-wrap: nowrap;
+	border: none;
+	border-radius: 20px;
+}
 
 
 
