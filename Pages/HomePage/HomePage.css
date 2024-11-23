@@ -129,7 +129,7 @@ body , html {
 
 #home {
 	position: relative;
-	height: 550px;
+	height: auto;
 	width: 100%;
 	background-image: url("/Assets/Images/write-like.jpg");
 	background-size: cover;
@@ -150,7 +150,7 @@ body , html {
 	position: relative;
 	z-index: 2;
 	max-width: 1000px;
-	height: 100%; 
+	height: 550px; 
 	margin: 0 auto 50px; 
 	padding: 20px; 
 	color: white;
@@ -208,8 +208,73 @@ body , html {
 	border-radius: 20px;
 }
 
+/*---------Register-------*/
 
+#register {
+	height: auto;
+	width: 100%;
+}
+#Register .container {
+	height: auto;
+	width: 100%;
+	background-color: rgb(114, 114, 114);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
+}
+#register .container > p {
+	font-size: 40px;
+	font-weight: 800;
+	text-align: center;
+	margin: 10px 0;
+}
+
+#Register .grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 25px  50px;
+	column-gap: 40px;
+}
+.for-students, 
+.for-tutors {
+	width: 380px;
+	height: 200px;
+	background-color: #050505;
+	color: white;
+	padding: 22px;
+	border-radius: 10px;
+	border: none;
+	font-weight: 200;
+}
+.for-students span, 
+.for-tutors span{
+	font-size: 24px;
+	font-weight: 700;
+}
+.Sign-up-now {
+	display: block;
+	max-width: fit-content;
+
+	padding: 8px 70px;
+	border: none;
+	border-radius: 15px;
+	margin: 0 auto;
+
+	cursor: pointer;
+}
+.for-students .Sign-up-now {
+	margin-top: 35px;
+}
+.for-tutors .Sign-up-now {
+	margin-top: 15px;
+}
+.Sign-up-now:hover {
+	transform: scale(1.1);
+	transition: transform 0.3s, border 0.3s;
+	border: 3px solid gold;
+}
 @media (max-width: 950px) {
 	#header .search-bar {
 		border-radius: 50%;
