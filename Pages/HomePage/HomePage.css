@@ -1,0 +1,143 @@
+:root {
+	--background-color: #FFF100;
+}
+*{
+	box-sizing: border-box;
+	font-family: poppins, arial;
+}
+body , html {
+	margin: 0;
+	background-color: #697565;
+}
+#header {
+	display: flex;
+	height: 65px;
+	width: 100%;
+	background-color: #000;
+}
+.left-section {
+	display: flex;
+	flex: 1;
+	max-width: fit-content;
+	margin: 0 auto;
+}
+.right-section {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 20px;
+	column-gap: 5px;
+	align-items: center;
+}
+
+.logo-div {
+	max-height: 100%;
+	width: auto;
+	margin-top: 5px;
+}
+.logo {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	background-color: black;
+	color: var(--background-color);
+	padding: 5px 10px;
+	font-size: 30px;
+	border: 3px solid var(--background-color);
+	border-radius: 20px;
+}
+.logo img {
+	width: 80px;
+	height: 80px;
+	background-color: var(--background-color);
+	border: 2px solid white;
+	border-radius: 50%;
+}
+
+#header .left-section nav {
+	display: flex;
+	align-items: center;
+}
+#header .left-section nav ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+}
+#header .left-section nav a {
+	text-decoration: none;
+}
+#header .left-section nav li {
+	font-weight: 500;
+	margin: 0 15px;
+	color: white;
+}
+#header .left-section nav li:hover {
+	transform: scale(1.1);
+	transition: 0.3s
+}
+
+#header .search-bar {
+	display: flex;
+	width: fit-content;
+
+	border: 1px solid rgb(213, 213, 213);
+	border-radius: 25px;
+	padding: 5px 10px;
+	column-gap: 10px;
+	background-color: white;
+}
+#header .search-input {
+	border: none;
+	width: 75px;
+	font-style: italic;
+}
+#header .search-icon {
+	width: 20px;
+	height: 20px;
+}
+
+.right-section a {
+	text-decoration: none;
+	padding: 10px 15px;
+	border-radius: 10px;
+	border: 2px solid var(--background-color);
+	font-weight: 200;
+}
+.right-section .LogIn-button {
+	background-color: black;
+	color: var(--background-color);
+}
+.right-section .LogIn-button:hover {
+	background-color: var(--background-color);
+	color: black;
+	transition: 0.3s;
+}
+.right-section .SignUp-button {
+	background-color: var(--background-color);
+	color: black;
+}
+.right-section .SignUp-button:hover {
+	background-color: black;
+	color: var(--background-color);
+	transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 950px) {
+	#header .search-bar {
+		border-radius: 50%;
+		padding: 10px;
+	}
+	#header .search-input {
+		display: none;
+	}
+}
