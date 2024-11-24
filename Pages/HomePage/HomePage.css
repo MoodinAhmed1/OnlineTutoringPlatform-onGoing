@@ -316,6 +316,150 @@ body , html {
 #tutor-registration  .Sign-up-now:hover {
 	transition: 0.3s;
 }
+
+
+#contact-me {
+	background-color: rgba(255, 255, 255, 0.548);
+}
+#contact-me a {
+	text-decoration: none;
+	color: black;
+}
+#contact-me .container {
+	max-width: fit-content;
+	height: auto;
+	margin: 0 auto;
+	padding: 50px;
+}
+#contact-me .row {
+	display: flex;
+	column-gap: 20px;
+}
+#contact-me .row .column1 {
+	flex-basis: 50%;
+}
+.phone, .email, .social-media {
+	display: flex;
+	color: black;
+	font-size: 20px;
+	font-weight: 200;
+	align-items: center;
+	margin-bottom: 5px;
+}
+.icon {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	border-radius: 50%;
+	margin-right: 10px;
+	border: 2px solid white;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.icon.email:hover {
+	background-color: red;
+	border: 2px solid red;
+	transform: translateY(-10px);
+}
+.icon.phone:hover {
+	background-color: green;
+	border: 2px solid green;
+	transform: translateY(-10px);
+}
+.social-media {
+	margin-top: 20px;
+	display: flex;
+}
+.social-media .icon {
+	position: relative;
+	margin-right: 20px;
+}
+.icon.facebook:hover {
+	background-color: blue;
+	border: 2px solid blue;
+	transform: translateY(-10px);
+}
+.icon.linkedin:hover {
+	background-color: rgb(33, 155, 255);
+	border: 2px solid rgb(33, 155, 255);
+	transform: translateY(-10px);
+}
+.icon.twitter:hover {
+	background-color: white;
+	border: 2px solid white;
+	transform: translateY(-10px);
+}
+.icon.telegram:hover {
+	background-color: rgb(33, 155, 255);
+	border: 2px solid rgb(33, 155, 255);
+	transform: translateY(-10px);
+}	
+#contact-me .column2 {
+	width: 50%;
+	margin-left: 10px;
+}
+.column1 h1 {
+	font-size: 40px;
+	font-weight: 800;
+	margin-top: 10px;
+}
+.column2 h2 {
+	font-size: 30px;
+	font-weight: 800;
+	margin-top: 10px;
+}
+label {
+	display: block;
+	margin-bottom: 20px;
+}
+input, textarea {
+	width: 100%;
+	border: none;
+	border-radius: 4px;
+}
+
+
+
+
+
+
+@media (max-width: 499px) {
+	#contact-me, #contact-me .container{
+		height: auto;
+		width: 100%;
+	}
+	#contact-me .container{
+		padding: 25px;
+	}
+	#contact-me .header {
+		font-size: 45px;
+	}
+	#contact-me .row {
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		margin: 2px;
+		height: fit-content;
+	}
+	#contact-me .row .column1 {
+		margin-bottom: 20px;
+		width: 100%;
+		height: auto;
+	}
+	#contact-me .column2 {
+		width:fit-content;
+		width: 100%;
+		height: auto;
+	}
+	#contact form {
+		width: 100%;
+		height: auto;
+	}
+}
+
+
 @media (max-width: 950px) {
 	#header .search-bar {
 		border-radius: 50%;
