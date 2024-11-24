@@ -7,7 +7,7 @@
 }
 body , html {
 	margin: 0;
-	background-color: #697565;
+	background-color: rgb(114, 114, 114);
 }
 #header {
 	display: flex;
@@ -238,7 +238,7 @@ body , html {
 	column-gap: 40px;
 }
 .for-students, 
-.for-tutors {
+.for-schools {
 	width: 380px;
 	height: 200px;
 	background-color: #050505;
@@ -249,7 +249,7 @@ body , html {
 	font-weight: 200;
 }
 .for-students span, 
-.for-tutors span{
+.for-schools span{
 	font-size: 24px;
 	font-weight: 700;
 }
@@ -267,13 +267,54 @@ body , html {
 .for-students .Sign-up-now {
 	margin-top: 35px;
 }
-.for-tutors .Sign-up-now {
+.for-schools .Sign-up-now {
 	margin-top: 15px;
 }
 .Sign-up-now:hover {
 	transform: scale(1.1);
 	transition: transform 0.3s, border 0.3s;
 	border: 3px solid gold;
+}
+
+#tutor-registration {
+	background-image: url(/Assets/Images/abstract/R\ \(1\).png);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	height: auto;
+	max-width: 100%;
+}
+#tutor-registration .container {
+	display: flex;
+	flex-direction: column;
+	padding: 80px;
+	justify-content: center;
+	align-content: center;
+}
+#tutor-registration .container h2 {
+	color: black;
+	font-size: 36px;
+	font-weight: 800;
+	max-width: fit-content;
+	margin: 0px auto;
+}
+#tutor-registration .container p {
+	color: black;
+	font-size: 16px;
+	max-width: fit-content;
+	margin: 10px auto;
+}
+
+#tutor-registration  .Sign-up-now {
+	border: 2px solid white;
+
+	margin-top: 20px;
+	padding: 15px 50px;
+	background-color: #000000;
+	color: red;
+}
+#tutor-registration  .Sign-up-now:hover {
+	transition: 0.3s;
 }
 @media (max-width: 950px) {
 	#header .search-bar {
